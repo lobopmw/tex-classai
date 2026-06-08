@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex sn-article"] 1779894705.44228 "sn-article.aux" "sn-article.bbl" "sn-article" 1779894708.10506 0
+["bibtex sn-article"] 1780947218.08413 "sn-article.aux" "sn-article.bbl" "sn-article" 1780947233.15793 0
   "./references.bib" 1779894697.24739 53371 ddf58f23fea2691e6ce2b7ed926a67bf ""
   "./sn-mathphys-num.bst" 1779893318 64166 9adad5d5c1e00c8b866e91fad1a03aa0 ""
-  "sn-article.aux" 1779894707.80442 15014 c9b81e03cfebc8441cec81e636f97d33 "pdflatex"
+  "sn-article.aux" 1780947232.915 15014 c9b81e03cfebc8441cec81e636f97d33 "pdflatex"
   (generated)
   "sn-article.bbl"
   "sn-article.blg"
   (rewritten before read)
-["pdflatex"] 1779894705.62283 "/home/starley/Documents/Artigo Final/Artigo_PPGGTD/Artigo_PPGGTD_Latex_Final_v3/overleaf_artigo_ppggtd_sem_cls/sn-article.tex" "sn-article.pdf" "sn-article" 1779894708.10524 0
+["pdflatex"] 1780947230.87506 "/home/starley/Documents/Artigo Final/Artigo_PPGGTD/Artigo_PPGGTD_Latex_Final_v3/tex-classai/sn-article.tex" "sn-article.pdf" "sn-article" 1780947233.1581 0
   "/etc/texmf/web2c/texmf.cnf" 1779884278.458 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/starley/Documents/Artigo Final/Artigo_PPGGTD/Artigo_PPGGTD_Latex_Final_v3/overleaf_artigo_ppggtd_sem_cls/sn-article.tex" 1779894673.95732 47921 2f350d0d3dea5fd7e69a63238adc8720 ""
+  "/home/starley/Documents/Artigo Final/Artigo_PPGGTD/Artigo_PPGGTD_Latex_Final_v3/tex-classai/sn-article.tex" 1780947230.70035 48012 8af1ff20f1f1f2fc46773d8ce66a615d ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -148,10 +148,10 @@
   "graphic_type.png" 1779893318 59207 542307619d6870f1fb580cdc7458196f ""
   "monitoring_realtime.png" 1779893318 473401 68cc6e21d188159097056f815b3bf950 ""
   "pose_estimation.png" 1779893318 2296358 7fb9b1f4c1cd7d0d4fca5bb5aff43b0f ""
-  "sn-article.aux" 1779894707.80442 15014 c9b81e03cfebc8441cec81e636f97d33 "pdflatex"
-  "sn-article.bbl" 1779894705.61889 13646 6a446f76366c096c5232e9563125a769 "bibtex sn-article"
-  "sn-article.out" 1779894707.80442 5212 f0a6ca1bc250a3017fea07708b97c45f "pdflatex"
-  "sn-article.tex" 1779894673.95732 47921 2f350d0d3dea5fd7e69a63238adc8720 ""
+  "sn-article.aux" 1780947232.915 15014 c9b81e03cfebc8441cec81e636f97d33 "pdflatex"
+  "sn-article.bbl" 1780947218.21796 13646 6a446f76366c096c5232e9563125a769 "bibtex sn-article"
+  "sn-article.out" 1780947232.916 5212 f0a6ca1bc250a3017fea07708b97c45f "pdflatex"
+  "sn-article.tex" 1780947230.70035 48012 8af1ff20f1f1f2fc46773d8ce66a615d ""
   "temporal_behavioral_distribution.png" 1779893318 463516 30c146a895b730d89c0125a948cc7890 ""
   (generated)
   "sn-article.aux"

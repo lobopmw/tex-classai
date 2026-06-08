@@ -1,9 +1,9 @@
-PWD /home/starley/Documents/Artigo Final/Artigo_PPGGTD/Artigo_PPGGTD_Latex_Final_v3/overleaf_artigo_ppggtd_sem_cls
+PWD /home/starley/Documents/Artigo Final/Artigo_PPGGTD/Artigo_PPGGTD_Latex_Final_v3/tex-classai
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT sn-article.tex
+INPUT /home/starley/Documents/Artigo Final/Artigo_PPGGTD/Artigo_PPGGTD_Latex_Final_v3/tex-classai/sn-article.tex
 OUTPUT sn-article.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
