@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{21}
+\begin{thebibliography}{24}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -44,11 +44,13 @@
 \csname PreBibitemsHook\endcsname
 
 %%% 1
-\bibitem[\protect\citeauthoryear{Zhu and Yang}{2024}]{zhuCsbyoloRapidEfficient2024}
+\bibitem[\protect\citeauthoryear{Zhu and
+  Yang}{2024}]{zhuCsbyoloRapidEfficient2024}
 \begin{barticle}
 \bauthor{\bsnm{Zhu}, \binits{W.}},
 \bauthor{\bsnm{Yang}, \binits{Z.}}:
-\batitle{Csb-yolo: A rapid and efficient real-time algorithm for classroom student behavior detection}.
+\batitle{Csb-yolo: A rapid and efficient real-time algorithm for classroom
+  student behavior detection}.
 \bjtitle{Journal of Real-Time Image Processing}
 \bvolume{21}(\bissue{4}),
 \bfpage{140}
@@ -58,162 +60,16 @@
 \endbibitem
 
 %%% 2
-\bibitem[\protect\citeauthoryear{Zhang et~al.}{2024a}]{zhangSmartClassroomsHow2024}
-\begin{barticle}
-\bauthor{\bsnm{Zhang}, \binits{X.}},
-\bauthor{\bsnm{Ding}, \binits{Y.}},
-\bauthor{\bsnm{Huang}, \binits{X.}},
-\bauthor{\bsnm{Li}, \binits{W.}},
-\bauthor{\bsnm{Long}, \binits{L.}},
-\bauthor{\bsnm{Ding}, \binits{S.}}:
-\batitle{Smart {{Classrooms}}: {{How Sensors}} and {{AI Are Shaping Educational Paradigms}}}.
-\bjtitle{Sensors}
-\bvolume{24}(\bissue{17}),
-\bfpage{5487}
-(\byear{2024})
-\doiurl{10.3390/s24175487}
-\end{barticle}
-\endbibitem
-
-%%% 3
-\bibitem[\protect\citeauthoryear{Zhang et~al.}{2024b}]{zhangAreThereFundamental2024}
-\begin{bchapter}
-\bauthor{\bsnm{Zhang}, \binits{Y.}},
-\bauthor{\bsnm{Liu}, \binits{S.}},
-\bauthor{\bsnm{Wang}, \binits{J.}}:
-\bctitle{Are {{There Fundamental Limitations}} in {{Supporting Vector Data Management}} in {{Relational Databases}}? {{A Case Study}} of {{PostgreSQL}}}.
-In: \bbtitle{2024 IEEE 40th International Conference on Data Engineering (ICDE)},
-pp. \bfpage{3640}--\blpage{3653}.
-\bpublisher{IEEE},
-\blocation{Utrecht, Netherlands}
-(\byear{2024}).
-\doiurl{10.1109/ICDE60146.2024.00280}
-\end{bchapter}
-\endbibitem
-
-%%% 4
-\bibitem[\protect\citeauthoryear{Chen et~al.}{2023}]{chenStudentBehaviorDetection2023}
-\begin{barticle}
-\bauthor{\bsnm{Chen}, \binits{H.}},
-\bauthor{\bsnm{Zhou}, \binits{G.}},
-\bauthor{\bsnm{Jiang}, \binits{H.}}:
-\batitle{Student {{Behavior Detection}} in the {{Classroom Based}} on {{Improved YOLOv8}}}.
-\bjtitle{Sensors}
-\bvolume{23}(\bissue{20}),
-\bfpage{8385}
-(\byear{2023})
-\doiurl{10.3390/s23208385}
-\end{barticle}
-\endbibitem
-
-%%% 5
-\bibitem[\protect\citeauthoryear{Hu et~al.}{2024}]{huRealTimeClassroomBehavior2024}
-\begin{barticle}
-\bauthor{\bsnm{Hu}, \binits{J.}},
-\bauthor{\bsnm{Huang}, \binits{Z.}},
-\bauthor{\bsnm{Li}, \binits{J.}},
-\bauthor{\bsnm{Xu}, \binits{L.}},
-\bauthor{\bsnm{Zou}, \binits{Y.}}:
-\batitle{Real-{{Time Classroom Behavior Analysis}} for {{Enhanced Engineering Education}}: {{An AI-Assisted Approach}}}.
-\bjtitle{International Journal of Computational Intelligence Systems}
-\bvolume{17}(\bissue{1}),
-\bfpage{167}
-(\byear{2024})
-\doiurl{10.1007/s44196-024-00572-y}
-\end{barticle}
-\endbibitem
-
-%%% 6
-\bibitem[\protect\citeauthoryear{Ara et~al.}{2023}]{araComprehensiveSurveyLearning2023}
-\begin{barticle}
-\bauthor{\bsnm{Ara}, \binits{S.J.S.}},
-\bauthor{\bsnm{Tanuja}, \binits{R.}},
-\bauthor{\bsnm{Manjula}, \binits{S.H.}},
-\bauthor{\bsnm{Venugopal}, \binits{K.R.}}:
-\batitle{A comprehensive survey on usage of learning analytics for enhancing learner's performance in learning portals}.
-\bjtitle{Journal of Educational Technology Systems}
-\bvolume{52}(\bissue{2}),
-\bfpage{245}--\blpage{273}
-(\byear{2023})
-\doiurl{10.1177/00472395231185843}
-\end{barticle}
-\endbibitem
-
-%%% 7
-\bibitem[\protect\citeauthoryear{Liang et~al.}{2025}]{liangYOLObasedBehaviorDetection2025}
-\begin{bchapter}
-\bauthor{\bsnm{Liang}, \binits{W.}},
-\bauthor{\bsnm{Zhang}, \binits{J.}},
-\bauthor{\bsnm{Wang}, \binits{J.}},
-\bauthor{\bsnm{Fan}, \binits{H.}}:
-\bctitle{A {{YOLO-based}} behavior detection and analysis system for smart classrooms}.
-In: \beditor{\bsnm{Tosti}, \binits{F.}},
-\beditor{\bsnm{Alvarez}, \binits{R.}} (eds.)
-\bbtitle{International Conference on Remote Sensing, Mapping, and Image Processing (RSMIP 2025)},
-p. \bfpage{112}.
-\bpublisher{SPIE},
-\blocation{Sanya, China}
-(\byear{2025}).
-\doiurl{10.1117/12.3067764}
-\end{bchapter}
-\endbibitem
-
-%%% 8
-\bibitem[\protect\citeauthoryear{Li et~al.}{2025}]{liRealTimeClassroomBehavior2025}
-\begin{botherref}
-\oauthor{\bsnm{Li}, \binits{J.}},
-\oauthor{\bsnm{Wang}, \binits{N.}},
-\oauthor{\bsnm{Zhang}, \binits{J.}},
-\oauthor{\bsnm{Yao}, \binits{X.}},
-\oauthor{\bsnm{Wei}, \binits{W.}}:
-Real-{{Time Classroom Behavior Detection}} and {{Visualization System Based}} on an {{Improved YOLOv11}}.
-Journal of Educational Technology and Innovation
-\textbf{7}(4)
-(2025)
-\doiurl{10.61414/mwad4j38}
-\end{botherref}
-\endbibitem
-
-%%% 9
-\bibitem[\protect\citeauthoryear{Yuvaraj et~al.}{2024}]{yuvarajAutomatedRecognitionTeacher2024}
-\begin{botherref}
-\oauthor{\bsnm{Yuvaraj}, \binits{R.}},
-\oauthor{\bsnm{Amalin~Prince}, \binits{A.}},
-\oauthor{\bsnm{Murugappan}, \binits{M.}}:
-An automated recognition of teacher and student activities in the classroom environment: {{A}} deep learning framework.
-IEEE Access,
-1--1
-(2024)
-\doiurl{10.1109/ACCESS.2024.3518577}
-\end{botherref}
-\endbibitem
-
-%%% 10
-\bibitem[\protect\citeauthoryear{Xiao et~al.}{2024}]{xiaoOcclusionRobustCognitive2024}
-\begin{barticle}
-\bauthor{\bsnm{Xiao}, \binits{G.}},
-\bauthor{\bsnm{Xu}, \binits{Q.}},
-\bauthor{\bsnm{Wei}, \binits{Y.}},
-\bauthor{\bsnm{Yao}, \binits{H.}},
-\bauthor{\bsnm{Liu}, \binits{Q.}}:
-\batitle{Occlusion {{Robust Cognitive Engagement Detection}} in {{Real-World Classroom}}}.
-\bjtitle{Sensors}
-\bvolume{24}(\bissue{11}),
-\bfpage{3609}
-(\byear{2024})
-\doiurl{10.3390/s24113609}
-\end{barticle}
-\endbibitem
-
-%%% 11
-\bibitem[\protect\citeauthoryear{Trabelsi et~al.}{2023}]{trabelsiRealTimeAttentionMonitoring2023a}
+\bibitem[\protect\citeauthoryear{Trabelsi
+  et~al.}{2023}]{trabelsiRealTimeAttentionMonitoring2023a}
 \begin{barticle}
 \bauthor{\bsnm{Trabelsi}, \binits{Z.}},
 \bauthor{\bsnm{Alnajjar}, \binits{F.}},
 \bauthor{\bsnm{Parambil}, \binits{M.M.A.}},
 \bauthor{\bsnm{Gochoo}, \binits{M.}},
 \bauthor{\bsnm{Ali}, \binits{L.}}:
-\batitle{Real-{{Time Attention Monitoring System}} for {{Classroom}}: {{A Deep Learning Approach}} for {{Student}}'s {{Behavior Recognition}}}.
+\batitle{Real-{{Time Attention Monitoring System}} for {{Classroom}}: {{A Deep
+  Learning Approach}} for {{Student}}'s {{Behavior Recognition}}}.
 \bjtitle{Big Data and Cognitive Computing}
 \bvolume{7}(\bissue{1}),
 \bfpage{48}
@@ -222,50 +78,175 @@ IEEE Access,
 \end{barticle}
 \endbibitem
 
-%%% 12
-\bibitem[\protect\citeauthoryear{Yang and Wang}{2024}]{yangStudentClassroomBehavior2024}
+%%% 3
+\bibitem[\protect\citeauthoryear{Yuvaraj
+  et~al.}{2024}]{yuvarajAutomatedRecognitionTeacher2024}
 \begin{botherref}
-\oauthor{\bsnm{Yang}, \binits{F.}},
-\oauthor{\bsnm{Wang}, \binits{X.}}:
-Student {{Classroom Behavior Detection}} Based on {{Spatio-Temporal Network}} and {{Multi-Model Fusion}}.
-arXiv
-(2024).
-\doiurl{10.48550/arXiv.2310.16267}
+\oauthor{\bsnm{Yuvaraj}, \binits{R.}},
+\oauthor{\bsnm{Amalin~Prince}, \binits{A.}},
+\oauthor{\bsnm{Murugappan}, \binits{M.}}:
+An automated recognition of teacher and student activities in the classroom
+  environment: {{A}} deep learning framework.
+IEEE Access,
+1--1
+(2024)
+\doiurl{10.1109/ACCESS.2024.3518577}
 \end{botherref}
 \endbibitem
 
-%%% 13
-\bibitem[\protect\citeauthoryear{Deng et~al.}{2019}]{dengArcFaceAdditiveAngular}
+%%% 4
+\bibitem[\protect\citeauthoryear{Zhang
+  et~al.}{2024a}]{zhangSmartClassroomsHow2024}
+\begin{barticle}
+\bauthor{\bsnm{Zhang}, \binits{X.}},
+\bauthor{\bsnm{Ding}, \binits{Y.}},
+\bauthor{\bsnm{Huang}, \binits{X.}},
+\bauthor{\bsnm{Li}, \binits{W.}},
+\bauthor{\bsnm{Long}, \binits{L.}},
+\bauthor{\bsnm{Ding}, \binits{S.}}:
+\batitle{Smart {{Classrooms}}: {{How Sensors}} and {{AI Are Shaping Educational
+  Paradigms}}}.
+\bjtitle{Sensors}
+\bvolume{24}(\bissue{17}),
+\bfpage{5487}
+(\byear{2024})
+\doiurl{10.3390/s24175487}
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem[\protect\citeauthoryear{Zhang
+  et~al.}{2024b}]{zhangAreThereFundamental2024}
+\begin{bchapter}
+\bauthor{\bsnm{Zhang}, \binits{Y.}},
+\bauthor{\bsnm{Liu}, \binits{S.}},
+\bauthor{\bsnm{Wang}, \binits{J.}}:
+\bctitle{Are {{There Fundamental Limitations}} in {{Supporting Vector Data
+  Management}} in {{Relational Databases}}? {{A Case Study}} of
+  {{PostgreSQL}}}.
+In: \bbtitle{2024 IEEE 40th International Conference on Data Engineering
+  (ICDE)},
+pp. \bfpage{3640}--\blpage{3653}.
+\bpublisher{IEEE},
+\blocation{Utrecht, Netherlands}
+(\byear{2024}).
+\doiurl{10.1109/ICDE60146.2024.00280}
+\end{bchapter}
+\endbibitem
+
+%%% 6
+\bibitem[\protect\citeauthoryear{Chen
+  et~al.}{2023}]{chenStudentBehaviorDetection2023}
+\begin{barticle}
+\bauthor{\bsnm{Chen}, \binits{H.}},
+\bauthor{\bsnm{Zhou}, \binits{G.}},
+\bauthor{\bsnm{Jiang}, \binits{H.}}:
+\batitle{Student {{Behavior Detection}} in the {{Classroom Based}} on
+  {{Improved YOLOv8}}}.
+\bjtitle{Sensors}
+\bvolume{23}(\bissue{20}),
+\bfpage{8385}
+(\byear{2023})
+\doiurl{10.3390/s23208385}
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem[\protect\citeauthoryear{Hu
+  et~al.}{2024}]{huRealTimeClassroomBehavior2024}
+\begin{barticle}
+\bauthor{\bsnm{Hu}, \binits{J.}},
+\bauthor{\bsnm{Huang}, \binits{Z.}},
+\bauthor{\bsnm{Li}, \binits{J.}},
+\bauthor{\bsnm{Xu}, \binits{L.}},
+\bauthor{\bsnm{Zou}, \binits{Y.}}:
+\batitle{Real-{{Time Classroom Behavior Analysis}} for {{Enhanced Engineering
+  Education}}: {{An AI-Assisted Approach}}}.
+\bjtitle{International Journal of Computational Intelligence Systems}
+\bvolume{17}(\bissue{1}),
+\bfpage{167}
+(\byear{2024})
+\doiurl{10.1007/s44196-024-00572-y}
+\end{barticle}
+\endbibitem
+
+%%% 8
+\bibitem[\protect\citeauthoryear{Ara
+  et~al.}{2023}]{araComprehensiveSurveyLearning2023}
+\begin{barticle}
+\bauthor{\bsnm{Ara}, \binits{S.J.S.}},
+\bauthor{\bsnm{Tanuja}, \binits{R.}},
+\bauthor{\bsnm{Manjula}, \binits{S.H.}},
+\bauthor{\bsnm{Venugopal}, \binits{K.R.}}:
+\batitle{A comprehensive survey on usage of learning analytics for enhancing
+  learner's performance in learning portals}.
+\bjtitle{Journal of Educational Technology Systems}
+\bvolume{52}(\bissue{2}),
+\bfpage{245}--\blpage{273}
+(\byear{2023})
+\doiurl{10.1177/00472395231185843}
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem[\protect\citeauthoryear{Liang
+  et~al.}{2025}]{liangYOLObasedBehaviorDetection2025}
+\begin{bchapter}
+\bauthor{\bsnm{Liang}, \binits{W.}},
+\bauthor{\bsnm{Zhang}, \binits{J.}},
+\bauthor{\bsnm{Wang}, \binits{J.}},
+\bauthor{\bsnm{Fan}, \binits{H.}}:
+\bctitle{A {{YOLO-based}} behavior detection and analysis system for smart
+  classrooms}.
+In: \beditor{\bsnm{Tosti}, \binits{F.}},
+\beditor{\bsnm{Alvarez}, \binits{R.}} (eds.)
+\bbtitle{International Conference on Remote Sensing, Mapping, and Image
+  Processing (RSMIP 2025)},
+p. \bfpage{112}.
+\bpublisher{SPIE},
+\blocation{Sanya, China}
+(\byear{2025}).
+\doiurl{10.1117/12.3067764}
+\end{bchapter}
+\endbibitem
+
+%%% 10
+\bibitem[\protect\citeauthoryear{Li
+  et~al.}{2025}]{liRealTimeClassroomBehavior2025}
+\begin{botherref}
+\oauthor{\bsnm{Li}, \binits{J.}},
+\oauthor{\bsnm{Wang}, \binits{N.}},
+\oauthor{\bsnm{Zhang}, \binits{J.}},
+\oauthor{\bsnm{Yao}, \binits{X.}},
+\oauthor{\bsnm{Wei}, \binits{W.}}:
+Real-{{Time Classroom Behavior Detection}} and {{Visualization System Based}}
+  on an {{Improved YOLOv11}}.
+Journal of Educational Technology and Innovation
+\textbf{7}(4)
+(2025)
+\doiurl{10.61414/mwad4j38}
+\end{botherref}
+\endbibitem
+
+%%% 11
+\bibitem[\protect\citeauthoryear{Deng
+  et~al.}{2019}]{dengArcFaceAdditiveAngular}
 \begin{bchapter}
 \bauthor{\bsnm{Deng}, \binits{J.}},
 \bauthor{\bsnm{Guo}, \binits{J.}},
 \bauthor{\bsnm{Xue}, \binits{N.}},
 \bauthor{\bsnm{Zafeiriou}, \binits{S.}}:
-\bctitle{{{ArcFace}}: {{Additive Angular Margin Loss}} for {{Deep Face Recognition}}}.
-In: \bbtitle{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+\bctitle{{{ArcFace}}: {{Additive Angular Margin Loss}} for {{Deep Face
+  Recognition}}}.
+In: \bbtitle{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition (CVPR)},
 pp. \bfpage{4690}--\blpage{4699}
 (\byear{2019}).
 \doiurl{10.1109/CVPR.2019.00482}
 \end{bchapter}
 \endbibitem
 
-%%% 14
-\bibitem[\protect\citeauthoryear{Schroff et~al.}{2015}]{schroffFaceNetUnifiedEmbedding2015}
-\begin{bchapter}
-\bauthor{\bsnm{Schroff}, \binits{F.}},
-\bauthor{\bsnm{Kalenichenko}, \binits{D.}},
-\bauthor{\bsnm{Philbin}, \binits{J.}}:
-\bctitle{{{FaceNet}}: {{A}} unified embedding for face recognition and clustering}.
-In: \bbtitle{2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-pp. \bfpage{815}--\blpage{823}.
-\bpublisher{IEEE},
-\blocation{Boston, MA, USA}
-(\byear{2015}).
-\doiurl{10.1109/CVPR.2015.7298682}
-\end{bchapter}
-\endbibitem
-
-%%% 15
+%%% 12
 \bibitem[\protect\citeauthoryear{An et~al.}{2022}]{anKillingTwoBirds2022}
 \begin{bchapter}
 \bauthor{\bsnm{An}, \binits{X.}},
@@ -275,8 +256,10 @@ pp. \bfpage{815}--\blpage{823}.
 \bauthor{\bsnm{Zhu}, \binits{X.}},
 \bauthor{\bsnm{Yang}, \binits{J.}},
 \bauthor{\bsnm{Liu}, \binits{T.}}:
-\bctitle{Killing {{Two Birds}} with {{One Stone}}: {{Efficient}} and {{Robust Training}} of {{Face Recognition CNNs}} by {{Partial FC}}}.
-In: \bbtitle{2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+\bctitle{Killing {{Two Birds}} with {{One Stone}}: {{Efficient}} and {{Robust
+  Training}} of {{Face Recognition CNNs}} by {{Partial FC}}}.
+In: \bbtitle{2022 IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR)},
 pp. \bfpage{4032}--\blpage{4041}.
 \bpublisher{IEEE},
 \blocation{New Orleans, LA, USA}
@@ -285,8 +268,180 @@ pp. \bfpage{4032}--\blpage{4041}.
 \end{bchapter}
 \endbibitem
 
+%%% 13
+\bibitem[\protect\citeauthoryear{N and Anusudha}{2023}]{nRealTimeFace2023}
+\begin{barticle}
+\bauthor{\bsnm{N}, \binits{A.}},
+\bauthor{\bsnm{Anusudha}, \binits{K.}}:
+\batitle{Real time face recognition system based on {{YOLO}} and
+  {{InsightFace}}}.
+\bjtitle{Multimedia Tools and Applications}
+\bvolume{83}(\bissue{11}),
+\bfpage{31893}--\blpage{31910}
+(\byear{2023})
+\doiurl{10.1007/s11042-023-16831-7}
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{Pan
+  et~al.}{2024}]{panSurveyVectorDatabase2024}
+\begin{barticle}
+\bauthor{\bsnm{Pan}, \binits{J.J.}},
+\bauthor{\bsnm{Wang}, \binits{J.}},
+\bauthor{\bsnm{Li}, \binits{G.}}:
+\batitle{Survey of vector database management systems}.
+\bjtitle{The VLDB Journal}
+\bvolume{33}(\bissue{5}),
+\bfpage{1591}--\blpage{1615}
+(\byear{2024})
+\doiurl{10.1007/s00778-024-00864-x}
+\end{barticle}
+\endbibitem
+
+%%% 15
+\bibitem[\protect\citeauthoryear{Mitoma
+  et~al.}{2025}]{mitomaBehaviorMonitoringSystem2025}
+\begin{bchapter}
+\bauthor{\bsnm{Mitoma}, \binits{R.}},
+\bauthor{\bsnm{Mukaeda}, \binits{T.}},
+\bauthor{\bsnm{Shima}, \binits{K.}},
+\bauthor{\bsnm{Kai}, \binits{H.}},
+\bauthor{\bsnm{Suzuki}, \binits{M.}},
+\bauthor{\bsnm{Kato}, \binits{K.}}:
+\bctitle{Behavior {{Monitoring System Leveraging Human Pose Estimation}}}.
+In: \bbtitle{2025 IEEE/SICE International Symposium on System Integration
+  (SII)},
+pp. \bfpage{1010}--\blpage{1015}.
+\bpublisher{IEEE},
+\blocation{Munich, Germany}
+(\byear{2025}).
+\doiurl{10.1109/SII59315.2025.10871072}
+\end{bchapter}
+\endbibitem
+
 %%% 16
-\bibitem[\protect\citeauthoryear{Nguyen and Bai}{2011}]{nguyenCosineSimilarityMetric2011}
+\bibitem[\protect\citeauthoryear{Yang and
+  Wang}{2024}]{yangStudentClassroomBehavior2024}
+\begin{botherref}
+\oauthor{\bsnm{Yang}, \binits{F.}},
+\oauthor{\bsnm{Wang}, \binits{X.}}:
+Student {{Classroom Behavior Detection}} Based on {{Spatio-Temporal Network}}
+  and {{Multi-Model Fusion}}.
+arXiv
+(2024).
+\doiurl{10.48550/arXiv.2310.16267}
+\end{botherref}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{Xiao
+  et~al.}{2024}]{xiaoOcclusionRobustCognitive2024}
+\begin{barticle}
+\bauthor{\bsnm{Xiao}, \binits{G.}},
+\bauthor{\bsnm{Xu}, \binits{Q.}},
+\bauthor{\bsnm{Wei}, \binits{Y.}},
+\bauthor{\bsnm{Yao}, \binits{H.}},
+\bauthor{\bsnm{Liu}, \binits{Q.}}:
+\batitle{Occlusion {{Robust Cognitive Engagement Detection}} in {{Real-World
+  Classroom}}}.
+\bjtitle{Sensors}
+\bvolume{24}(\bissue{11}),
+\bfpage{3609}
+(\byear{2024})
+\doiurl{10.3390/s24113609}
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem[\protect\citeauthoryear{Sheng
+  et~al.}{2025}]{shengRealtimeClassroomStudent2025}
+\begin{barticle}
+\bauthor{\bsnm{Sheng}, \binits{X.}},
+\bauthor{\bsnm{Li}, \binits{S.}},
+\bauthor{\bsnm{Chan}, \binits{S.}}:
+\batitle{Real-time classroom student behavior detection based on improved
+  {{YOLOv8s}}}.
+\bjtitle{Scientific Reports}
+\bvolume{15}(\bissue{1}),
+\bfpage{14470}
+(\byear{2025})
+\doiurl{10.1038/s41598-025-99243-x}
+\end{barticle}
+\endbibitem
+
+%%% 19
+\bibitem[\protect\citeauthoryear{Zhang
+  et~al.}{2025}]{zhangClassroomBehaviorDetection2025}
+\begin{barticle}
+\bauthor{\bsnm{Zhang}, \binits{H.}},
+\bauthor{\bsnm{Zhou}, \binits{G.}},
+\bauthor{\bsnm{He}, \binits{W.}},
+\bauthor{\bsnm{Deng}, \binits{H.}}:
+\batitle{Classroom {{Behavior Detection Method Based}} on {{PLA-YOLO11n}}}.
+\bjtitle{Sensors}
+\bvolume{25}(\bissue{17}),
+\bfpage{5386}
+(\byear{2025})
+\doiurl{10.3390/s25175386}
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem[\protect\citeauthoryear{Hossen and
+  Uddin}{2023}]{hossenAttentionMonitoringStudents2023}
+\begin{barticle}
+\bauthor{\bsnm{Hossen}, \binits{M.K.}},
+\bauthor{\bsnm{Uddin}, \binits{M.S.}}:
+\batitle{Attention monitoring of students during online classes using
+  {{XGBoost}} classifier}.
+\bjtitle{Computers and Education: Artificial Intelligence}
+\bvolume{5},
+\bfpage{100191}
+(\byear{2023})
+\doiurl{10.1016/j.caeai.2023.100191}
+\end{barticle}
+\endbibitem
+
+%%% 21
+\bibitem[\protect\citeauthoryear{Schroff
+  et~al.}{2015}]{schroffFaceNetUnifiedEmbedding2015}
+\begin{bchapter}
+\bauthor{\bsnm{Schroff}, \binits{F.}},
+\bauthor{\bsnm{Kalenichenko}, \binits{D.}},
+\bauthor{\bsnm{Philbin}, \binits{J.}}:
+\bctitle{{{FaceNet}}: {{A}} unified embedding for face recognition and
+  clustering}.
+In: \bbtitle{2015 IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)},
+pp. \bfpage{815}--\blpage{823}.
+\bpublisher{IEEE},
+\blocation{Boston, MA, USA}
+(\byear{2015}).
+\doiurl{10.1109/CVPR.2015.7298682}
+\end{bchapter}
+\endbibitem
+
+%%% 22
+\bibitem[\protect\citeauthoryear{Deng
+  et~al.}{2019}]{dengRetinaFaceSinglestageDense2019}
+\begin{botherref}
+\oauthor{\bsnm{Deng}, \binits{J.}},
+\oauthor{\bsnm{Guo}, \binits{J.}},
+\oauthor{\bsnm{Zhou}, \binits{Y.}},
+\oauthor{\bsnm{Yu}, \binits{J.}},
+\oauthor{\bsnm{Kotsia}, \binits{I.}},
+\oauthor{\bsnm{Zafeiriou}, \binits{S.}}:
+{{RetinaFace}}: {{Single-stage Dense Face Localisation}} in the {{Wild}}.
+arXiv
+(2019).
+\doiurl{10.48550/arXiv.1905.00641}
+\end{botherref}
+\endbibitem
+
+%%% 23
+\bibitem[\protect\citeauthoryear{Nguyen and
+  Bai}{2011}]{nguyenCosineSimilarityMetric2011}
 \begin{bchapter}
 \bauthor{\bsnm{Nguyen}, \binits{H.V.}},
 \bauthor{\bsnm{Bai}, \binits{L.}}:
@@ -304,83 +459,20 @@ pp. \bfpage{709}--\blpage{720}.
 \end{bchapter}
 \endbibitem
 
-%%% 17
-\bibitem[\protect\citeauthoryear{Deng et~al.}{2019}]{dengRetinaFaceSinglestageDense2019}
-\begin{botherref}
-\oauthor{\bsnm{Deng}, \binits{J.}},
-\oauthor{\bsnm{Guo}, \binits{J.}},
-\oauthor{\bsnm{Zhou}, \binits{Y.}},
-\oauthor{\bsnm{Yu}, \binits{J.}},
-\oauthor{\bsnm{Kotsia}, \binits{I.}},
-\oauthor{\bsnm{Zafeiriou}, \binits{S.}}:
-{{RetinaFace}}: {{Single-stage Dense Face Localisation}} in the {{Wild}}.
-arXiv
-(2019).
-\doiurl{10.48550/arXiv.1905.00641}
-\end{botherref}
-\endbibitem
-
-%%% 18
-\bibitem[\protect\citeauthoryear{Mitoma et~al.}{2025}]{mitomaBehaviorMonitoringSystem2025}
-\begin{bchapter}
-\bauthor{\bsnm{Mitoma}, \binits{R.}},
-\bauthor{\bsnm{Mukaeda}, \binits{T.}},
-\bauthor{\bsnm{Shima}, \binits{K.}},
-\bauthor{\bsnm{Kai}, \binits{H.}},
-\bauthor{\bsnm{Suzuki}, \binits{M.}},
-\bauthor{\bsnm{Kato}, \binits{K.}}:
-\bctitle{Behavior {{Monitoring System Leveraging Human Pose Estimation}}}.
-In: \bbtitle{2025 IEEE/SICE International Symposium on System Integration (SII)},
-pp. \bfpage{1010}--\blpage{1015}.
-\bpublisher{IEEE},
-\blocation{Munich, Germany}
-(\byear{2025}).
-\doiurl{10.1109/SII59315.2025.10871072}
-\end{bchapter}
-\endbibitem
-
-%%% 19
-\bibitem[\protect\citeauthoryear{Zhang et~al.}{2025}]{zhangClassroomBehaviorDetection2025}
-\begin{barticle}
-\bauthor{\bsnm{Zhang}, \binits{H.}},
-\bauthor{\bsnm{Zhou}, \binits{G.}},
-\bauthor{\bsnm{He}, \binits{W.}},
-\bauthor{\bsnm{Deng}, \binits{H.}}:
-\batitle{Classroom {{Behavior Detection Method Based}} on {{PLA-YOLO11n}}}.
-\bjtitle{Sensors}
-\bvolume{25}(\bissue{17}),
-\bfpage{5386}
-(\byear{2025})
-\doiurl{10.3390/s25175386}
-\end{barticle}
-\endbibitem
-
-%%% 20
-\bibitem[\protect\citeauthoryear{Dai et~al.}{2025}]{ClassroomBehaviorRecognition2025}
+%%% 24
+\bibitem[\protect\citeauthoryear{Dai
+  et~al.}{2025}]{ClassroomBehaviorRecognition2025}
 \begin{barticle}
 \bauthor{\bsnm{Dai}, \binits{J.}},
 \bauthor{\bsnm{Xie}, \binits{A.}},
 \bauthor{\bsnm{Yu}, \binits{D.}}:
-\batitle{Classroom {{Behavior Recognition Through Joint Improvement}} of {{Faster RCNN Algorithm Under}} the {{Construction}} of {{Smart Education}}}.
+\batitle{Classroom {{Behavior Recognition Through Joint Improvement}} of
+  {{Faster RCNN Algorithm Under}} the {{Construction}} of {{Smart Education}}}.
 \bjtitle{KSII Transactions on Internet and Information Systems}
 \bvolume{19}(\bissue{2}),
 \bfpage{533}--\blpage{554}
 (\byear{2025})
 \doiurl{10.3837/tiis.2025.02.009}
-\end{barticle}
-\endbibitem
-
-%%% 21
-\bibitem[\protect\citeauthoryear{Hossen and Uddin}{2023}]{hossenAttentionMonitoringStudents2023}
-\begin{barticle}
-\bauthor{\bsnm{Hossen}, \binits{M.K.}},
-\bauthor{\bsnm{Uddin}, \binits{M.S.}}:
-\batitle{Attention monitoring of students during online classes using {{XGBoost}} classifier}.
-\bjtitle{Computers and Education: Artificial Intelligence}
-\bvolume{5},
-\bfpage{100191}
-(\byear{2023})
-\doiurl{10.1016/j.caeai.2023.100191}
 \end{barticle}
 \endbibitem
 

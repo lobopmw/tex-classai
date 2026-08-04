@@ -55,7 +55,7 @@ Contemporary educational environments increasingly demand technological approach
 
 \section{Introduction}
 
-Educational environments have progressively become more complex due to increasing classroom heterogeneity, prolonged instructional demands, and the growing necessity for individualized pedagogical observation. In face-to-face educational contexts, teachers are frequently required to conduct instructional activities, manage classroom organization, observe student participation, and identify engagement tendencies under limited temporal and cognitive conditions.
+Educational environments have progressively become more complex due to increasing classroom heterogeneity, prolonged instructional demands, and the growing necessity for individualized pedagogical observation. In face-to-face educational contexts, teachers are frequently required to conduct instructional activities, manage classroom organization, observe student participation, and identify engagement tendencies under limited temporal and cognitive conditions \cite{trabelsiRealTimeAttentionMonitoring2023a,yuvarajAutomatedRecognitionTeacher2024,zhangSmartClassroomsHow2024}.
 
 Within this scenario, Artificial Intelligence in Education and Learning Analytics have emerged as relevant interdisciplinary research fields capable of supporting educational observation and pedagogical decision-making through computational analysis of educational data \cite{zhangSmartClassroomsHow2024,zhangAreThereFundamental2024}. Existing studies have demonstrated the potential of intelligent systems to assist teachers in understanding learning dynamics, interaction patterns, and student engagement tendencies \cite{chenStudentBehaviorDetection2023,huRealTimeClassroomBehavior2024}.
 
@@ -63,7 +63,9 @@ Most Learning Analytics approaches traditionally rely on data extracted from vir
 
 Recent advances in Computer Vision and Deep Learning have enabled the application of pose estimation, facial recognition, and activity analysis techniques within educational contexts \cite{liangYOLObasedBehaviorDetection2025,liRealTimeClassroomBehavior2025}. Nevertheless, many existing approaches remain strongly centered on technical performance metrics or affective inference models, often providing limited pedagogical interpretation and raising ethical concerns regarding emotional recognition and automated student profiling.
 
-Considering these limitations, the present study proposes an intelligent behavioral monitoring platform designed to support observational learning analytics in classroom environments through Computer Vision and temporal behavioral interpretation. The proposed monitoring framework integrates YOLOv11-Pose for real-time human pose estimation, InsightFace with ArcFace embeddings for facial recognition, and PostgreSQL integrated with PGVector for vector similarity search and embedding management.
+Considering these limitations, the present study proposes an intelligent behavioral monitoring platform designed to support observational learning analytics in classroom environments through Computer Vision and temporal behavioral interpretation. The proposed monitoring framework integrates YOLOv11-Pose for real-time human pose estimation, InsightFace with ArcFace embeddings for facial recognition \cite{dengArcFaceAdditiveAngular,anKillingTwoBirds2022,nRealTimeFace2023}, and PostgreSQL integrated with PGVector for vector similarity search and embedding management \cite{zhangAreThereFundamental2024,panSurveyVectorDatabase2024}.
+% TODO AUTOR: inserir referência técnica oficial sobre YOLOv11-Pose.
+% TODO AUTOR: inserir referência técnica oficial sobre PostgreSQL e PGVector, se a política editorial permitir documentação técnica.
 
 Rather than attempting to infer emotional or psychological states, the proposed system focuses exclusively on observable classroom interaction patterns associated with pedagogical observation. The behavioral analysis module was designed to identify tendencies related to attentive posture, distraction patterns, agitation, prolonged downward head positioning, and hand-raising interactions commonly associated with questioning behavior.
 
@@ -74,11 +76,11 @@ One of the central contributions of the proposed framework involves temporal beh
 
 \subsection{Learning Analytics and Artificial Intelligence in Education}
 
-Learning Analytics has emerged as an interdisciplinary research field focused on the collection, analysis, and interpretation of educational data to support pedagogical decision-making and improve learning processes. Rather than emphasizing exclusively academic performance metrics, contemporary Learning Analytics approaches increasingly investigate classroom engagement, participation dynamics, and behavioral interaction patterns capable of supporting reflective educational practices.
+Learning Analytics has emerged as an interdisciplinary research field focused on the collection, analysis, and interpretation of educational data to support pedagogical decision-making and improve learning processes \cite{araComprehensiveSurveyLearning2023,zhangSmartClassroomsHow2024}. Rather than emphasizing exclusively academic performance metrics, contemporary Learning Analytics approaches increasingly investigate classroom engagement, participation dynamics, and behavioral interaction patterns capable of supporting reflective educational practices \cite{huRealTimeClassroomBehavior2024,mitomaBehaviorMonitoringSystem2025}.
 
-Artificial Intelligence in Education has progressively contributed to the development of intelligent educational support systems capable of assisting teachers in understanding instructional dynamics and classroom interaction tendencies. Within this context, Computer Vision techniques have demonstrated significant potential for enabling observational classroom analytics through automated visual interpretation.
+Artificial Intelligence in Education has progressively contributed to the development of intelligent educational support systems capable of assisting teachers in understanding instructional dynamics and classroom interaction tendencies \cite{zhangSmartClassroomsHow2024,huRealTimeClassroomBehavior2024}. Within this context, Computer Vision techniques have demonstrated significant potential for enabling observational classroom analytics through automated visual interpretation of engagement, participation, and classroom behavior indicators \cite{chenStudentBehaviorDetection2023,yuvarajAutomatedRecognitionTeacher2024,yangStudentClassroomBehavior2024}.
 
-Recent educational research highlights the importance of intelligent systems that support teachers without replacing pedagogical autonomy. Consequently, explainable observational analytics and ethically oriented educational monitoring approaches have become increasingly relevant within educational technology research.
+Recent educational research highlights the importance of intelligent systems that support teachers without replacing pedagogical autonomy, particularly because automated monitoring can raise concerns regarding privacy, interpretability, emotional inference, and excessive behavioral simplification \cite{trabelsiRealTimeAttentionMonitoring2023a,xiaoOcclusionRobustCognitive2024,zhangSmartClassroomsHow2024}. Consequently, explainable observational analytics and ethically oriented educational monitoring approaches have become increasingly relevant within educational technology research.
 
 \subsection{Computer Vision Applications in Educational Environments}
 
@@ -86,7 +88,7 @@ Advances in Deep Learning and Computer Vision have enabled the application of in
 
 Pose estimation approaches based on convolutional neural networks allow the extraction of anatomical keypoints associated with body posture and movement dynamics \cite{zhuCsbyoloRapidEfficient2024}. These techniques enable the identification of behavioral tendencies associated with participation, distraction, movement, and classroom engagement.
 
-Recent studies have also explored hybrid Computer Vision architectures combining convolutional neural networks and recurrent neural networks for classroom activity recognition and educational behavior analysis. Such approaches process classroom video streams to identify interaction patterns associated with instructional dynamics and student participation.
+For example, Yuvaraj et al. proposed a long-term recurrent convolutional network (LRCN) that combines convolutional feature extraction with recurrent temporal modeling to recognize teacher and student activities in classroom videos, including instructional and learner actions relevant to classroom observation \cite{yuvarajAutomatedRecognitionTeacher2024}. Similarly, Yang and Wang investigated spatio-temporal student classroom behavior detection and multi-model fusion for behaviors such as hand-raising, reading, and writing \cite{yangStudentClassroomBehavior2024}. These studies demonstrate the relevance of temporal visual modeling for educational behavior analysis, although they differ from the present work because the proposed platform emphasizes real-time observational indicators, facial association with registered students, and interpretable geometric criteria for teacher support.
 
 \begin{figure}[!htbp]
 \centering
@@ -97,20 +99,20 @@ Recent studies have also explored hybrid Computer Vision architectures combining
 
 Among contemporary approaches, the YOLO family has demonstrated high performance in real-time object detection and pose estimation tasks \cite{liangYOLObasedBehaviorDetection2025,liRealTimeClassroomBehavior2025}. Such models have enabled efficient classroom monitoring scenarios involving multiple individuals simultaneously observed through video streams.
 
-Despite these advances, many existing studies remain predominantly centered on technical performance metrics while offering limited pedagogical interpretation regarding classroom engagement dynamics. In addition, several approaches rely on emotional inference mechanisms that may introduce ethical concerns associated with interpretability, privacy, and excessive behavioral simplification.
+Despite these advances, studies such as Chen et al., Liang et al., Li et al., Sheng et al., and Zhang et al. primarily report detection-oriented outcomes using indicators such as precision, mAP, recall, model size, or latency, while their pedagogical discussion is generally secondary to the optimization of visual detection models \cite{chenStudentBehaviorDetection2023,liangYOLObasedBehaviorDetection2025,liRealTimeClassroomBehavior2025,shengRealtimeClassroomStudent2025,zhangClassroomBehaviorDetection2025}. Other works move beyond observable behavior detection toward attention, cognitive engagement, or emotional-state inference; for instance, Trabelsi et al. monitor attention and emotional states, Xiao et al. detect cognitive engagement, and Hossen and Uddin classify attention in online classes \cite{trabelsiRealTimeAttentionMonitoring2023a,xiaoOcclusionRobustCognitive2024,hossenAttentionMonitoringStudents2023}. This distinction is important because detecting visible behaviors such as hand-raising or head orientation is not equivalent to inferring engagement, emotion, or psychological condition. The present study therefore adopts a more restricted observational scope: it uses interpretable geometric criteria to support teacher reflection without performing emotional recognition, psychological profiling, or automated diagnostic classification.
 
 Considering these limitations, the present study adopts an observational perspective focused on interpretable classroom interaction patterns rather than emotional or psychological inference.
 
 \subsection{Facial Recognition and Embedding-Based Educational Monitoring}
-Facial recognition systems based on deep neural networks have progressively evolved through the use of embedding-based representations capable of converting facial characteristics into multidimensional numerical vectors optimized for similarity comparison.
+Facial recognition systems based on deep neural networks have progressively evolved through the use of embedding-based representations capable of converting facial characteristics into multidimensional numerical vectors optimized for similarity comparison \cite{schroffFaceNetUnifiedEmbedding2015,dengArcFaceAdditiveAngular}.
 
-Among contemporary approaches, ArcFace has demonstrated high discriminative performance through additive angular margin optimization, enabling robust facial embedding generation suitable for identification tasks in real-time environments. InsightFace extends this approach by integrating facial detection, alignment, and embedding extraction within unified facial analysis pipelines.
+Among contemporary approaches, ArcFace has demonstrated high discriminative performance through additive angular margin optimization, enabling robust facial embedding generation suitable for identification tasks in real-time environments \cite{dengArcFaceAdditiveAngular}. InsightFace-related research and implementations integrate facial detection, alignment, and embedding extraction within unified facial analysis pipelines \cite{dengRetinaFaceSinglestageDense2019,anKillingTwoBirds2022,nRealTimeFace2023}.
 
-ArcFace-based facial recognition architectures operate through embedding representations projected into normalized hyperspherical vector spaces. In this approach, facial identities are represented as multidimensional numerical vectors optimized for angular discrimination through additive margin learning. Consequently, cosine similarity becomes particularly suitable for identity comparison because it evaluates angular proximity between embeddings rather than absolute vector magnitude.
+ArcFace-based facial recognition architectures operate through embedding representations projected into normalized hyperspherical vector spaces. In this approach, facial identities are represented as multidimensional numerical vectors optimized for angular discrimination through additive margin learning \cite{dengArcFaceAdditiveAngular}. Consequently, cosine similarity becomes particularly suitable for identity comparison because it evaluates angular proximity between embeddings rather than absolute vector magnitude \cite{nguyenCosineSimilarityMetric2011}.
 
-Within this vector representation strategy, embeddings associated with the same individual tend to remain spatially close, while embeddings belonging to different individuals become mathematically separated in the feature space. This characteristic contributes to robust identity differentiation and efficient similarity retrieval operations in real-time educational monitoring environments.
+Within this vector representation strategy, embeddings associated with the same individual tend to remain spatially close, while embeddings belonging to different individuals become mathematically separated in the feature space \cite{schroffFaceNetUnifiedEmbedding2015,dengArcFaceAdditiveAngular}. This characteristic contributes to robust identity differentiation and efficient similarity retrieval operations in real-time educational monitoring environments.
 
-Embedding-based recognition strategies offer important advantages for educational environments because they reduce dependency on continuous raw biometric image storage. Instead of preserving facial images, the system stores normalized vector representations optimized for cosine similarity comparison and vector retrieval operations.
+Embedding-based recognition strategies may offer advantages for educational environments because they reduce dependency on continuous raw biometric image storage. Instead of preserving facial images for continuous comparison, the system stores normalized vector representations optimized for cosine similarity comparison and vector retrieval operations \cite{nguyenCosineSimilarityMetric2011,panSurveyVectorDatabase2024}.
 
 Figure~\ref{fig:embeddings} illustrates the conceptual representation of embedding generation and vector storage adopted by the proposed platform.
 
@@ -123,11 +125,11 @@ Figure~\ref{fig:embeddings} illustrates the conceptual representation of embeddi
 \end{figure}
 \FloatBarrier
 
-Within educational monitoring contexts, embedding-based facial identification enables longitudinal classroom observation and temporal behavioral analytics while reducing unnecessary biometric exposure. This strategy contributes to privacy-aware educational monitoring approaches compatible with contemporary data protection requirements.
+Within educational monitoring contexts, embedding-based facial identification enables longitudinal classroom observation and temporal behavioral analytics while reducing unnecessary exposure of raw facial images. This strategy contributes to privacy-aware educational monitoring approaches but does not, by itself, establish legal or regulatory compliance.
 
-After the embedding generation process, facial representations are projected into a high-dimensional vector space in which similar identities remain spatially close while distinct identities become mathematically separated. This spatial organization enables the platform to compare identities through similarity metrics such as cosine distance and Euclidean distance.
+After the embedding generation process, facial representations are projected into a high-dimensional vector space in which similar identities remain spatially close while distinct identities become mathematically separated \cite{schroffFaceNetUnifiedEmbedding2015,dengArcFaceAdditiveAngular}. This spatial organization enables the platform to compare identities through similarity metrics such as cosine distance and Euclidean distance \cite{nguyenCosineSimilarityMetric2011}.
 
-The ability to distinguish different individuals within this vector space is one of the central characteristics responsible for the robustness of contemporary facial recognition architectures, particularly models based on ArcFace and InsightFace.
+The ability to distinguish different individuals within this vector space is one of the central characteristics responsible for the robustness of contemporary facial recognition architectures, particularly models based on ArcFace and InsightFace-related pipelines \cite{dengArcFaceAdditiveAngular,anKillingTwoBirds2022}.
 
 Figure~\ref{fig:arcface_cnn} illustrates the conceptual process through which facial images are transformed into numerical vector representations capable of supporting similarity comparison and identity differentiation operations.
 
@@ -138,7 +140,8 @@ Figure~\ref{fig:arcface_cnn} illustrates the conceptual process through which fa
 \label{fig:arcface_cnn}
 \end{figure}
 
-Within the proposed platform, these vector representations are subsequently stored in PostgreSQL integrated with PGVector, enabling efficient similarity retrieval and longitudinal educational monitoring operations.
+Within the proposed platform, these vector representations are subsequently stored in PostgreSQL integrated with PGVector, enabling similarity retrieval and longitudinal educational monitoring operations \cite{zhangAreThereFundamental2024,panSurveyVectorDatabase2024}.
+% TODO AUTOR: inserir referência técnica oficial sobre PGVector, caso exigida pela revista.
 
 
 \subsection{Ethical and Privacy Considerations in Educational Monitoring}
@@ -159,10 +162,14 @@ This study adopted an applied technological research approach focused on the dev
 \subsection{Platform Architecture}
 The proposed architecture integrates real-time video acquisition, pose estimation, facial recognition, vector similarity search, behavioral inference, and temporal reporting modules. Figure~\ref{fig:architecture} presents the general workflow of the platform.
 
+The workflow starts with the camera module, which provides the RTSP video stream used as the input for real-time classroom monitoring. The pre-processing stage then prepares the captured frames for inference by organizing the visual input before it is forwarded to the analytical modules. YOLOv11-Pose processes these frames to detect individuals and extract anatomical keypoints, which are used by the behavioral inference module to interpret observable posture, movement, and hand-raising patterns. In parallel, InsightFace processes detected facial regions to generate or compare facial embeddings, supporting the association between visual observations and previously registered students.
+
+The PostgreSQL/PGVector layer stores structured monitoring records and vector representations, enabling similarity search between embeddings captured during monitoring and embeddings associated with registered students. Finally, the dashboard presents the resulting monitoring information and temporal analytics for pedagogical interpretation. In this architecture, pose estimation and facial recognition perform complementary functions: pose estimation supports behavioral interpretation, whereas facial recognition supports association with the registered student within the controlled experimental setting.
+
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.95\textwidth]{architecture.png}
-\caption{General architecture of the proposed observational learning analytics platform integrating RTSP video acquisition, pose estimation, facial recognition, vector similarity search, behavioral inference, and temporal reporting modules.}
+\caption{General architecture of the proposed observational learning analytics platform, showing the workflow from RTSP camera acquisition and frame pre-processing to YOLOv11-Pose estimation, InsightFace facial embedding processing, PostgreSQL/PGVector storage and similarity search, and dashboard-based temporal reporting.}
 \label{fig:architecture}
 \end{figure}
 
@@ -180,6 +187,7 @@ Rather than relying exclusively on facial analysis, the use of pose estimation e
 \centering
 \includegraphics[width=0.75\textwidth]{pose_estimation.png}
 \caption{Illustrative representation of classroom pose estimation and behavioral observation within the proposed educational behavioral analytics framework.}
+% TODO AUTOR: confirmar autoria, origem e autorização de uso da imagem da Figura 5.
 \label{fig:pose}
 \end{figure}
 
@@ -259,6 +267,15 @@ Additionally, facial identification is performed through cosine similarity compa
 
 The experimental validation of the proposed platform was conducted using a real-time processing environment configured for Computer Vision and Deep Learning inference tasks. Table~\ref{tab:environment} summarizes the main computational specifications adopted during the experiments.
 
+The experimental validation was conducted as a proof-of-concept in a controlled laboratory environment using RTSP video streams to simulate classroom monitoring conditions. The processing workflow was configured to evaluate real-time pose estimation, facial association, behavioral interpretation, and temporal analytics under controlled observation conditions.
+
+Before the monitoring sessions, participants were registered through a facial embedding workflow in which facial images were converted into normalized numerical representations and associated with registered identifiers for subsequent vector similarity retrieval. The controlled experimental setting was adopted to validate the technical feasibility of the proposed platform before future evaluation in real classroom environments, where factors such as illumination variation, occlusion, camera positioning, classroom density, and interaction dynamics may influence system performance.
+% TODO AUTOR: informar número de participantes do experimento.
+% TODO AUTOR: informar procedimento de consentimento/autorização.
+% TODO AUTOR: descrever processo de cadastro facial dos voluntários.
+% TODO AUTOR: informar local institucional ou caracterização do ambiente experimental.
+% TODO AUTOR: informar posicionamento da câmera e condições de iluminação.
+
 \begin{table}[htbp]
 \centering
 \caption{Processing environment specifications adopted during the experiments.}
@@ -286,7 +303,7 @@ CUDA Toolkit, cuDNN, and TensorRT were employed to optimize GPU-based inference 
 
 The proposed platform performs student identification through an embedding-based facial recognition architecture integrating InsightFace, ArcFace representations, PostgreSQL, and PGVector vector retrieval operations \cite{dengArcFaceAdditiveAngular,schroffFaceNetUnifiedEmbedding2015,anKillingTwoBirds2022}. During classroom monitoring activities, facial regions are continuously detected from RTSP video streams and converted into normalized numerical embeddings optimized for similarity comparison through cosine-based vector retrieval mechanisms \cite{nguyenCosineSimilarityMetric2011}.
 
-Unlike traditional image-based storage approaches, the proposed framework prioritizes vector representations capable of preserving discriminative facial characteristics while reducing dependency on continuous raw biometric image retention. This strategy contributes to real-time identification efficiency while supporting privacy-aware educational monitoring practices compatible with contemporary data protection requirements.
+Unlike traditional image-based storage approaches, the proposed framework prioritizes vector representations capable of preserving discriminative facial characteristics while reducing dependency on continuous raw biometric image retention. This strategy contributes to real-time identification efficiency while supporting privacy-aware educational monitoring practices, although additional institutional, legal, and governance procedures remain necessary for any operational deployment.
 
 Figure~\ref{fig:facial_pipeline} presents the complete facial recognition and vector similarity workflow adopted by the proposed educational monitoring platform.
 
@@ -406,7 +423,7 @@ Attentive (Atento)         & 42.1 min                 & 77.3\%                  
 Distracted (Distraído)     & 9.0 min                  & 16.6\%                  & Occasional                \\
 Agitated (Agitado)         & 1.3 min                  & 2.4\%                   & Low Frequency             \\
 Questioning (Perguntando)  & 1.2 min                  & 2.1\%                   & Low Frequency             \\
-Downward posture (Dormindo)      & 0.8 min                  & 1.5\%                   & Low Frequency             \\ \bottomrule
+Downward posture (prototype label: `Dormindo')      & 0.8 min                  & 1.5\%                   & Low Frequency             \\ \bottomrule
 \end{tabularx}
 \end{table}
 
@@ -450,7 +467,7 @@ Unlike approaches centered on emotional inference or automated psychological cla
 
 The experimental results demonstrated the feasibility of performing simultaneous multi-subject monitoring, behavioral interpretation, temporal behavioral analytics, and embedding-based student association in real time. In addition, the generated longitudinal reports and temporal distribution analytics demonstrated potential for supporting classroom engagement analysis, instructional reflection, and educational decision-making processes.
 
-From an ethical and privacy-oriented perspective, the proposed architecture contributes to educational monitoring approaches that minimize dependency on continuous raw biometric image storage by prioritizing normalized embedding representations and vector similarity retrieval operations. This strategy reinforces the compatibility of the platform with contemporary educational data protection and privacy-preserving principles.
+From an ethical and privacy-oriented perspective, the proposed architecture contributes to educational monitoring approaches that minimize dependency on continuous raw biometric image storage by prioritizing normalized embedding representations and vector similarity retrieval operations. This strategy may reduce unnecessary exposure of raw facial images, although it does not replace formal data protection, consent, and governance procedures required in educational contexts.
 
 Despite the promising results, the study presents important limitations. The experiments were conducted in a controlled laboratory environment involving proof-of-concept validation conditions, which may not fully represent the complexity of real classroom scenarios. Environmental factors such as illumination variation, physical occlusions, camera positioning, and classroom overcrowding may influence behavioral inference performance and monitoring stability.
 
